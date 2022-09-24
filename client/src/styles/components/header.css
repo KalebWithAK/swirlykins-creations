@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  position: sticky;
+  padding-bottom: 0.25rem;
+  box-shadow: 0 4px 2px -2px var(--gray-shadow);
+}
+header img {
+  width: 5rem;
+  height: 5rem;
+  box-shadow: 2px 2px 2px  var(--gray-shadow);
+}
+
+header div.text {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  font-size: 1.05rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 1rem;
+}
+nav * {
+  text-decoration: none;
+  position: relative;
+  transition: 1s;
+}
+nav *, nav *:hover, nav *:visited, nav *.active {
+  color: var(--link-color);
+}
+nav *:hover {
+  transform: translateY(0.5rem);
+}
+nav *.active, nav *:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+/* This file is just for global colors and typography */
+:root {
+  --gray-shadow: rgba(122, 122, 122, 0.3);
+  --link-color: gray;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 1rem;
+}
+
+h1 {
+  font-family: 'Patua One', cursive;
+}
