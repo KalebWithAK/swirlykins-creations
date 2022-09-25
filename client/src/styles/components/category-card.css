@@ -1,0 +1,21 @@
+div.category-card {
+  width: 15rem;
+  height: 20vh;
+  border-radius: 10px;
+  padding: 0;
+  text-align: center;
+  box-shadow: 2px 2px 4px var(--gray-shadow);
+  transition: 0.5s;
+}
+
+div.category-card > img {
+  border-radius: 10px 10px 0 0;
+  width: 15rem;
+  height: 15vh;
+  margin: 0;
+}
+
+div.category-card:hover {
+  box-shadow: 6px 6px 8px var(--gray-shadow);
+  transform: translateY(0.5rem);
+}
