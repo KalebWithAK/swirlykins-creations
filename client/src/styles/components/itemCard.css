@@ -1,0 +1,37 @@
+div.item-card {
+  width: 15rem;
+  height: 20vh;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 2px 2px 4px var(--gray-shadow);
+  transition: 0.5s;
+  position: relative;
+}
+
+div.item-card img {
+  border-radius: 10px 10px 0 0;
+  width: 15rem;
+  height: 15vh;
+  margin: 0;
+}
+div.item-card span {
+  position: absolute;
+  margin: 0;
+  right: 0.3rem;
+  top: 0.2rem;
+  background: rgba(212, 212, 212, 0.4);
+  border-radius: 2px;
+}
+div.item-card div.details {
+  visibility: hidden;
+}
+
+div.item-card:hover {
+  box-shadow: 6px 6px 8px var(--gray-shadow);
+  transform: translateY(0.5rem);
+  height: auto;
+}
+
+div.item-card:hover div.details {
+  visibility: visible;
+}
