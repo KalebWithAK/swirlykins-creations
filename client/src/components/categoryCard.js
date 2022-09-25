@@ -1,4 +1,4 @@
-import '../styles/components/category-card.css'
+import '../styles/components/categoryCard.css'
 export default function CategoryCard({ /* img, name */ }) {
   return (
     <div className='category-card'>
