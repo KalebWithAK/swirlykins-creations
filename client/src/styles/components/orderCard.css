@@ -1,0 +1,51 @@
+div.order-card {
+  box-shadow: 2px 2px 4px var(--shadow-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-rows: repeat(2, 1fr);
+  width: max-content;
+  height: 15vh;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+  background: white;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+div.order-card h3 {
+  grid-column: 1;
+  grid-row: 1;
+}
+div.order-card a.tracking {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  text-align: right;
+}
+div.order-card p.placed {
+  grid-column: 1;
+  grid-row: 2;
+}
+div.order-card p.shipped {
+  grid-column: 2;
+  grid-row: 2;
+}
+div.order-card a.details {
+  grid-column: 3;
+  grid-row: 2;
+  text-align: right;
+}
+
+
+div.order-card:hover {
+  box-shadow: 6px 6px 8px var(--shadow-color);
+  transform: translateX(0.5rem);
+  z-index: 1;
+}
+
+div.order-card a {
+  transition: 0.5s;
+}
+div.order-card a:hover {
+  transform: translateX(-0.5rem);
+}

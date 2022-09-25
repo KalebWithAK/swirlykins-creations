@@ -1,7 +1,14 @@
-/* This file is just for global colors and typography */
+/* This file is just for global colors, typography, and App sizing */
 :root {
-  --gray-shadow: rgba(122, 122, 122, 0.3);
-  --link-color: gray;
+  --shadow-color: rgba(91, 255, 230, 0.4);
+  --link-color: rgba(137,78,105,255);
+  --white: rgb(244, 238, 238);
+  --blue: rgba(91,225,230,255);
+  --blue-shadow: rgba(91, 255, 230, 0.4);
+  --light-pink: rgba(250,211,223, 0.5);
+  --pink: rgba(247,162,192,255);
+  --orange: rgba(247,178,79,255);
+
 }
 * {
   margin: 0;
@@ -9,10 +16,30 @@
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  margin: 1rem;
+.App {
+  width: 100%;
+  min-height: 122vh;
+  height: fit-content;
+  position: relative;
+  color: #4c3412;
+}
+.App * {
+  margin: 0.5rem;
 }
 
 h1 {
-  font-family: 'Patua One', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+a {
+  font-size: 1.05rem;
+  text-decoration: none;
+}
+a, a:hover, a:visited, nav *.active {
+  color: var(--link-color);
+}
+a:hover {
+  text-decoration: underline;
 }

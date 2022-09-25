@@ -3,9 +3,10 @@ div.item-card {
   height: 20vh;
   border-radius: 10px;
   padding: 0;
-  box-shadow: 2px 2px 4px var(--gray-shadow);
+  box-shadow: 2px 2px 4px var(--shadow-color);
   transition: 0.5s;
   position: relative;
+  background: white;
 }
 
 div.item-card img {
@@ -28,9 +29,11 @@ div.item-card div.details {
 }
 
 div.item-card:hover {
-  box-shadow: 6px 6px 8px var(--gray-shadow);
+  box-shadow: 6px 6px 8px var(--shadow-color);
   transform: translateY(0.5rem);
   height: auto;
+  margin-bottom: 1rem;
+  z-index: 1;
 }
 
 div.item-card:hover div.details {

@@ -1,15 +1,18 @@
 header {
   display: flex;
   align-items: center;
-  position: relative;
   position: sticky;
+  top: 0;
   padding-bottom: 0.25rem;
-  box-shadow: 0 4px 2px -2px var(--gray-shadow);
+  box-shadow: 0 4px 2px -2px var(--shadow-color);
+  background: white;
+  z-index: 3;
 }
 header img {
-  width: 5rem;
-  height: 5rem;
-  box-shadow: 2px 2px 2px  var(--gray-shadow);
+  width: 10rem;
+  height: 10rem;
+  /*box-shadow: 2px 2px 2px  var(--gray-shadow);*/
+  border-radius: 50%;
 }
 
 header div.text {
@@ -20,23 +23,15 @@ header div.text {
 }
 
 header nav {
-  font-size: 1.05rem;
   position: absolute;
   right: 0;
   display: flex;
   gap: 1rem;
 }
-nav * {
-  text-decoration: none;
-  position: relative;
-  transition: 1s;
+
+nav a {
+  transition: 0.5s;
 }
-nav *, nav *:hover, nav *:visited, nav *.active {
-  color: var(--link-color);
-}
-nav *:hover {
+nav a:hover {
   transform: translateY(0.5rem);
-}
-nav *.active, nav *:hover {
-  text-decoration: underline;
 }

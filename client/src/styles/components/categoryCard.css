@@ -4,8 +4,9 @@ div.category-card {
   border-radius: 10px;
   padding: 0;
   text-align: center;
-  box-shadow: 2px 2px 4px var(--gray-shadow);
+  box-shadow: 2px 2px 4px var(--shadow-color);
   transition: 0.5s;
+  background: white;
 }
 
 div.category-card > img {
@@ -16,6 +17,7 @@ div.category-card > img {
 }
 
 div.category-card:hover {
-  box-shadow: 6px 6px 8px var(--gray-shadow);
+  box-shadow: 6px 6px 8px var(--shadow-color);
   transform: translateY(0.5rem);
+  z-index: 1;
 }

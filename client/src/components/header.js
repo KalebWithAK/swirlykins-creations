@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Header({ logged_in }) {
   return (
     <header>
-      <img alt='logo' />
+      <img src={require('../images/logo.png')} alt='logo' />
       <div className='text'>
         <h1>Swirlykins Creations</h1>
         <p>I love to create beautiful things</p>
