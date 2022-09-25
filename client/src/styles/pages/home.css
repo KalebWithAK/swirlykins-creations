@@ -1,0 +1,11 @@
+div.home {
+  width: max-content;
+  margin: 0 auto;
+}
+
+div.category-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+}
