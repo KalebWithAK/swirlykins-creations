@@ -1,0 +1,14 @@
+div.orders-page {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+}
+
+div.order-container {
+  max-height: 68vh;
+  overflow-y: scroll;
+}
+
+div.order-container h2 {
+  padding-left: 1rem;
+}
