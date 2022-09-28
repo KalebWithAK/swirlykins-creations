@@ -1,0 +1,29 @@
+form.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: auto;
+  
+}
+
+form.login-page input[type='email'], form input[type='password'] {
+  margin-bottom: 1.5rem;
+  height: 3vh;
+  border: none;
+  border-bottom: solid 1px var(--pink);
+}
+
+form.login-page input[type='submit'] {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+}
+
+div.register {
+  text-align: center;
+}
+
+div.register a:hover {
+  transform: translateY(0.5vh);
+}
